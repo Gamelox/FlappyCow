@@ -824,7 +824,7 @@ self.C3_JsPropNameTable = [
 		() => -5,
 		() => "",
 		() => "Speed",
-		() => 450,
+		() => 550,
 		() => 50,
 		() => "Background + Obstacles + Milk",
 		p => {
@@ -840,7 +840,7 @@ self.C3_JsPropNameTable = [
 		},
 		() => -100,
 		() => 1,
-		() => 1800,
+		() => 1600,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0((-160), 70);
@@ -866,10 +866,10 @@ self.C3_JsPropNameTable = [
 		},
 		() => "Cow",
 		() => -600,
-		() => 2,
+		() => 1.5,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => (4 * f0());
+			return () => (3 * f0());
 		},
 		() => 0,
 		() => 20,
