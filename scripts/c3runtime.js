@@ -666,11 +666,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Rotate.Acts.SetEnabled,
 		C3.Plugins.Sprite.Cnds.IsOutsideLayout,
 		C3.Plugins.Sprite.Acts.SetPos,
-		C3.Plugins.Sprite.Acts.SetScale,
-		C3.Plugins.Text.Acts.SetFontColor,
-		C3.Plugins.Text.Acts.SetPos,
-		C3.Plugins.Text.Exps.X,
-		C3.Plugins.Text.Exps.Y,
 		C3.Plugins.System.Acts.SetGroupActive,
 		C3.Behaviors.Bullet.Acts.SetEnabled,
 		C3.Plugins.System.Acts.AddVar,
@@ -684,11 +679,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
 		C3.Plugins.System.Acts.ResetGlobals,
 		C3.Plugins.System.Acts.RestartLayout,
-		C3.Plugins.Sprite.Acts.SetAnim,
-		C3.Plugins.Text.Acts.Destroy,
-		C3.Plugins.System.Exps.rgba255,
-		C3.Plugins.Sprite.Cnds.IsBoolInstanceVarSet,
-		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
 		C3.Plugins.System.Acts.GoToLayout
 	];
 };
@@ -834,7 +824,7 @@ self.C3_JsPropNameTable = [
 		() => -5,
 		() => "",
 		() => "Speed",
-		() => 550,
+		() => 450,
 		() => 50,
 		() => "Background + Obstacles + Milk",
 		p => {
@@ -892,16 +882,6 @@ self.C3_JsPropNameTable = [
 			const f2 = p._GetNode(2).GetBoundMethod();
 			return () => (v0.GetValue() - (v1.GetValue() * f2()));
 		},
-		() => 302,
-		() => 399,
-		() => 0.39,
-		() => -703730394072063,
-		p => {
-			const n0 = p._GetNode(0);
-			return () => (n0.ExpObject() - 30);
-		},
-		() => 381,
-		() => 368,
 		() => "Scoring",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
@@ -938,24 +918,7 @@ self.C3_JsPropNameTable = [
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() / 10);
-		},
-		() => "Level 2",
-		() => 365,
-		() => 640,
-		p => {
-			const n0 = p._GetNode(0);
-			return () => (n0.ExpObject() - 50);
-		},
-		() => 390,
-		() => "Animation 1",
-		() => 39,
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0(255, 255, 255, 255);
-		},
-		() => 10,
-		() => 5,
-		() => 100
+		}
 	];
 }
 
