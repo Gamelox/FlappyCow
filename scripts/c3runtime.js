@@ -721,8 +721,7 @@ self.C3_JsPropNameTable = [
 	{DistanceTravelled: 0},
 	{Speed: 0},
 	{ObstacleSpeed: 0},
-	{Milk: 0},
-	{distancee: 0}
+	{Milk: 0}
 ];
 
 "use strict";
