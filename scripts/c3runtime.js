@@ -3116,6 +3116,7 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 		C3.Plugins.LocalStorage.Acts.GetItem,
 		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.LocalStorage.Exps.ItemValue,
+		C3.Plugins.Audio.Acts.SetPaused,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.System.Exps.dt,
 		C3.Behaviors.Bullet.Acts.SetSpeed,
@@ -3335,8 +3336,7 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 		() => "1",
 		() => 0.39,
 		() => "Local Storage",
-		() => "TestGame_Score",
-		() => "MyStars",
+		() => "Best_Score",
 		() => 0,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -3346,6 +3346,7 @@ const map=new WeakMap;self.IBulletBehaviorInstance=class IBulletBehaviorInstance
 			const v0 = p._GetNode(0).GetVar();
 			return () => v0.GetValue();
 		},
+		() => "MyStars",
 		() => "Speed",
 		() => 550,
 		() => 50,
